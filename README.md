@@ -29,6 +29,19 @@ We're using this approach to develop the [Flutter app](https://github.com/invoic
 
 `./starter.sh make <application> <module> <fields>`
 
+#### Step 5: Upgrade to AndroidX project
+
+Go to `android\app\build.gradle` and change
+
+`compileSdkVersion 29`
+`minSdkVersion 21`
+`targetSdkVersion 29`
+
+Go to `android\gradle.properties` and add following lines
+
+`android.useAndroidX=true`
+`android.enableJetifier=true`
+
 For example:
 
 ```
